@@ -12,6 +12,7 @@ goBtn.addEventListener('click', () => {
     Array.from(bgColorFill).forEach(e=>{
         e.style.backgroundColor = color;
     })
+    colorSection.classList.remove('hidden')
 })
 
 function randomNo(){
