@@ -13,7 +13,7 @@
 <body>
     <header>
         <div class="fixed right-4 bottom-4 text-xl md:text-2xl text-blue-500 xl:text-3xl xl:right-5 xl:bottom-5"><a href="#header"><i class="bi bi-arrow-up-circle-fill"></i></a></div>
-        <section class="px-2 py-2 select-none flex justify-between text-[.42rem] font-bold bg-blue-600 min-[410px]:text-[.55rem] sm:text-sm md:text-base lg:text-xl lg:px-3 lg:py-3 xl:text-2xl 2xl:py-4">
+        <section id="header" class="px-2 py-2 select-none flex justify-between text-[.42rem] text-white font-bold bg-blue-600 min-[410px]:text-[.55rem] sm:text-sm md:text-base lg:text-xl lg:px-3 lg:py-3 xl:text-2xl 2xl:py-4">
             <div class="cursor-pointer hover:text-green-400 active:text-red-400">TechnicalMasterSP</div>
             <nav>
                 <ul class="flex gap-2 sm:gap-3 lg:gap-5 xl:gap-6 2xl:gap-7">
@@ -34,9 +34,12 @@
             <p class="py-2 text-sm text-center md:py-4 md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">We're thrilled you've found us! At Color Harmony, we're dedicated to helping you create the perfect visual experience with expertly curated color combinations. Whether you're a designer, developer, or just someone who appreciates beautiful aesthetics, our site offers the best color palettes to harmonize your font and background colors. Dive in and explore our selection to elevate your projects with stunning, cohesive color schemes. Thank you for visiting, and we can't wait to see how our colors inspire your creativity! 🌈✨</p>
         </section>
         <section class="px-3 select-none lg:px-5 xl:py-5">
-            <div class="flex gap-3 justify-around h-28 md:gap-4 md:h-32 md:text-xl lg:h-36 xl:text-2xl 2xl:text-3xl 2xl:h-48">
-                <!-- <div class="box h-full w-1/2 max-w-[50rem]"><a class="px-3 font-bold bg-slate-800 text-white cursor-pointer h-full flex items-center justify-center border-4 border-red-400 rounded-lg" href="#"><button>Check By Font Color</button></a></div> -->
-                <div class="box h-full w-1/2 max-w-[50rem]"><a class="px-3 font-bold bg-slate-800 text-white cursor-pointer h-full flex items-center justify-center border-4 border-red-400 rounded-lg" href="#"><button>Check By Background Color</button></a></div>
+            <div class="flex gap-3 justify-around h-52 md:gap-4 md:h-32 md:text-xl lg:h-36 xl:text-2xl 2xl:text-3xl 2xl:h-48">
+                <div class="box w-[100rem] px-3 font-bold bg-slate-800 text-white flex flex-col gap-5 items-center justify-evenly border-4 border-red-500 rounded-lg">
+                    <label for="colorByUser" class="text-center text-xl">Enter your Background Color Code</label>
+                    <input id="colorByUser" class="text-black px-2 py-1 uppercase w-48 outline-none rounded-md text-base" type="text" placeholder="Ex : #FFFFFF">
+                    <button id="goBtn" class="border-2 border-red-400 py-1 px-3 rounded-lg bg-[#34fa55] text-[#6725eb] hover:bg-[#82ff97] hover:text-[#6725eb] active:text-[#34fa55] active:bg-[#6725eb] font-extrabold">Let's Go</button>
+                </div>
             </div>
         </section>
         <section id="colorSection" class="px-2 py-4 md:py-6 lg:px-5">
@@ -230,6 +233,6 @@
             </div>
         </section>
     </footer>
-    <script src="static/scripts/index.js"></script>
+    <script src="../scripts/findByBgColor.js"></script>
 </body>
 </html>
